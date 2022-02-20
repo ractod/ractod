@@ -88,7 +88,7 @@ body{
     align-items: center ;
     width: 100vw ;
     height: 100vh ;
-    background: url(/image/test9.jpg) center/cover ;
+    background: url(/ractod/image/test9.jpg) center/cover ;
     padding: 0 130px ;
     position: absolute ;
     top: 0 ;
@@ -156,7 +156,7 @@ body{
 .site-article-part{
     width: 100vw ;
     height: 100vh ;
-    background: url(/image/sky\ watching.jpg) center/cover;
+    background: url(/ractod/image/sky\ watching.jpg) center/cover;
     display: flex ;
     align-items: center ;
     padding: 0 127px ;
