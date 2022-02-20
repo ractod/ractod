@@ -11,7 +11,7 @@ body{
     height: 100vh ;
     padding: 20px 50px ;
     overflow-x: hidden ;
-    background: url(/ractod/image/test6.jpg) center/cover fixed ;
+    background: url(../image/test6.jpg) center/cover fixed ;
 }
 
 /* استایل دادن به بخش بالایی */
@@ -151,11 +151,36 @@ body{
         width: 250px ;
         height:  250px;
     }
-    .first-information-text ul li{
-        font-size: 16px ;
-    }
     .top-content{
         padding: 0 ;
+    }
+}
+
+@media (max-width: 480px){
+    
+    body{
+        padding: 15px ;
+    }
+    .first-information-text{
+        padding: 0 ;
+    }
+    .first-information-text ul li{
+        font-size: 300px ;
+    }
+    #first{
+        font-size: 14px ;
+    }
+    .information{
+        padding: 12px ;
+    }
+    #input{
+        right: 18% ;
+    }
+    .top-information{
+        height: 80vh ;
+    }
+    .information{
+        margin-top: 15px ;
     }
 }
 
@@ -165,6 +190,9 @@ body{
     }
     .card-content h1{
         display: none ;
+    }
+    .first-information-text ul li{
+        font-size: 18px ;
     }
 }
 
