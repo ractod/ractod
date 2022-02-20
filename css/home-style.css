@@ -47,6 +47,10 @@ body{
     z-index: 3 ;
 }
 
+#navbar-logo img{
+    z-index: 3 ;
+}
+
                                           /*  <header> استایل دادن به لینک های */
 
 .menu-logo{
