@@ -1,0 +1,179 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    color: #D3D4EE ;
+    font-family: 'Alata' , sans-serif ;
+}
+
+body{
+    width: 100vw ;
+    height: 100vh ;
+    padding: 20px 50px ;
+    overflow-x: hidden ;
+    background: url(/ractod/image/test6.jpg) center/cover fixed ;
+}
+
+/* استایل دادن به بخش بالایی */
+
+.top-information{
+    display: flex ;
+    justify-content: space-between ;
+    width: 100% ;
+    background-color: #2b3a67c4 ;
+    border-radius: 40px ;
+    padding: 30px ;
+}
+
+.top-content{
+    position: relative;
+    display: flex ;
+    justify-content: space-between ;
+    padding: 0 50px ;
+}
+
+.card-content{
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-around ;
+    align-items: center ;
+    padding: 30px  ;
+    /* width: 400px ; */
+    height: 500px ;
+    border-radius: 40px ; 
+}
+
+/* استایل دادن به متن بخش بالایی */
+
+.card-content h1{
+    font-size: 40px ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+.card-content h1::after{
+    content: "";
+    display: block ;
+    height: 4px ;
+    width: 130% ;
+    background-color: #C4C4C4 ;
+    border-radius: 30px ;
+}
+
+#second-quick-information{
+    display: none ;
+    text-align: right ;
+}
+
+.first-information-text{
+    height: 500px ;
+    display: flex ;
+    justify-content: flex-start ;
+    align-items: center ;
+    padding: 50px 50px 0 50px  ;
+    border-radius: 40px ;
+}
+
+.first-information-text ul li{
+    font-size: 20px ;
+    margin-bottom: 50px ;
+}
+
+/* استایل دادن به کلید تغییر زبان */
+
+#input{
+    position: absolute ;
+    right: 15% ;
+    top: 5% ;
+}
+
+#english{
+    bottom: 24px ;
+    position: relative ;
+    right: 10px ;
+}
+
+#persian{
+    position: relative;
+    bottom: 24px ;
+    right: 10px ;
+    display: none ;
+}
+
+#toggle-input{
+    display: flex ;
+    left: 90% ;
+    position: relative;
+    width: 50px ;
+    height: 20px ;
+    border-radius: 50px ;
+    background-color: black ;
+}
+
+#circle{
+    position: absolute ;
+    height: 20px ;
+    width: 20px ;
+    border-radius: 50% ;
+    background-color: white ;
+    transition: all .2s linear ;
+    right: 0px ;
+}
+
+/* استایل دادن به بخش پایینی */
+
+.bottom-content{
+    margin-bottom: 20px ;
+}
+
+.information{
+    display: flex ;
+    width: 100% ;
+    background-color: #2b3a67c4 ;
+    margin-top: 60px ;
+    border-radius: 40px ;
+    padding: 30px ;
+}
+
+.information p{
+    font-size: 20px ;
+}
+
+#second{
+    display: none ;
+    text-align: right ;
+    line-height: 35px ;
+}
+
+@media (max-width: 1100px) {
+    .card-content img{
+        width: 250px ;
+        height:  250px;
+    }
+    .first-information-text ul li{
+        font-size: 16px ;
+    }
+    .top-content{
+        padding: 0 ;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-content img{
+       display: none ;
+    }
+    .card-content h1{
+        display: none ;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-content img{
+        width: 150px ;
+        height:  150px;
+    }
+    .card-content h1{
+        font-size: 30px ;
+    }
+}

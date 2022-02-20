@@ -1,0 +1,130 @@
+.menu-logo{
+    padding: 0 50px 0 0 ;
+    display: inline-block ;
+}
+
+.fa-bars{
+    transition: transform .2s linear ;
+}
+
+.fa-xmark{
+    transform: rotate(180deg);
+}
+
+#navbar-logo{
+    padding: 0 0 0 50px ;
+}
+
+.site-navbar-part{
+    width: 100% ;
+    padding:  0 ;
+}
+
+.navbar-content{
+    display: flex ;
+    flex-direction: column-reverse ;
+    align-items: flex-start ;
+    justify-content: space-around ;
+    position: absolute ;
+    background-color: #142863 ;
+    height: 200px ;
+    width: 100vw ;
+    padding-top: 20px ;
+    top: 90px ;
+    transition: clip-path .3s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navbar-content li::after{
+    content: none ;
+}
+
+.navbar-content li a:hover{
+    color: #807d7d ;
+}
+
+.background{
+    height: 100vh ;
+    position: absolute ;
+}
+
+/* استایل دادن به بخش خانه */
+
+.site-home-part{
+    padding: 0 50px ;
+}
+
+.site-home-part p{
+    font-size: 18px ;
+}
+
+.site-home-part h1{
+    font-size: 60px ;
+}
+
+@media (max-width: 600px){
+    .site-home-part div img{
+        display: none ;
+    }
+}
+
+/* استایل دادنبه بخش درباره ما */
+
+.site-about-us-part{
+    justify-content: center ;
+}
+
+.about-us-part-text{
+    width: 400px ;
+}
+
+.about-us-part-image img{
+    display: none ;
+}
+
+
+#about-us-part-first-paragraph , #about-us-second-paragraph{
+    font-size: 23px  ;
+}
+
+.about-us-part-text h1{
+    font-size: 40px;
+}
+
+/* استایل دادن به بخش مقاله ها */
+
+.site-article-part{
+    justify-content: flex-start ;
+    padding: 0 50px ;
+}
+
+.article-part-text h1{
+    font-size: 40px ;
+}
+
+.article-part-text .article-part-first-paragraph , .article-part-text .article-part-second-paragraph{
+    font-size: 18px ;
+}
+
+/* استایل دادن به بخش دانسمندان */
+
+.site-scientist-part{
+    justify-content: center  ;
+    padding: 0 50px ;    
+}
+
+.scientist-part-image{
+    display: none ;
+}
+
+.person-photo{
+    width: 150px ;
+}
+
+.scientist-part-text h1{
+    font-size: 40px ;
+}

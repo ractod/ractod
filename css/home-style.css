@@ -1,0 +1,298 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    color: #D3D4EE ;
+    font-family: 'Alata' , sans-serif ;
+    text-decoration: none ;
+    list-style: none ;
+}
+
+body{
+    width: 100vw ;
+    height: 100vh ;
+    overflow-x: hidden ;
+} 
+
+:root{
+    scroll-behavior: smooth ;
+}
+
+#home-back-photo{
+    position: absolute ;
+    width: 100vw ;
+    height: 100vh ;
+    z-index: -1 ;
+}
+
+.first-page{
+    height: 100vh;
+}
+
+                                          /*  <navbar> استایل دادن به */
+
+.site-navbar-part{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 0 50px ;
+}
+
+.navbar-content{
+    display: flex ;
+    justify-content: space-between ;
+}
+
+                                          /*  <header> استایل دادن به لینک های */
+
+.menu-logo{
+    font-size: 30px ;
+    display: none ;
+}
+
+.navbar-link a{
+    text-decoration: none ;
+    font-size: 20px ;
+    margin: 0 20px ;
+    position: relative ;
+    bottom: 13px ;
+}
+
+.navbar-link::after{
+    content: "" ;
+    display: block ;
+    height: 4px ;
+    width: 0 ;
+    margin: 0 auto ;
+    background-color: #283e7e;
+    position: relative;
+    bottom: 8px ;
+    border-radius: 70px ;
+    transition: width .25s linear ;
+}
+
+.navbar-link:hover::after{
+    width: calc(100% - 20%);
+}
+
+                                          /* استایل دادن به بخش خانه */
+
+.site-home-part{
+    display: flex ;
+    justify-content: space-between ;
+    padding: 0 130px ;
+    margin-top: 16vh ;
+}
+
+                                          /* استایل دادن به متن بخش خانه */
+
+.home-part-text{
+    width: 467px ;
+}
+
+.home-part-text h1{
+    font-size: 75px ;
+    color: #2B3A67 ;
+}
+
+.home-part-text p {
+    font-size: 20px ;
+}
+
+                                          /* استایل دادن به بخس درباره ما */
+
+.site-about-us-part{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    background-color: #131722 ;
+    width: 100vw  ;
+    height: 100vh;
+    padding: 0 50px ;
+    z-index: -1 ;
+}
+
+
+                                          /* استایل دادن به متن بخس درباره ما */
+
+.about-us-part-text{
+    width: 400px ;
+}
+
+.about-us-part-text h1{
+    font-size: 40px ;
+    margin-bottom: 40px ;
+    padding: 15px 25px ;
+    background-color: #2B3A67 ;
+    display: inline-block ;
+    border-radius: 30px ;
+}
+
+#about-us-part-first-paragraph{
+    opacity: 80% ;
+    font-size: 18px ;
+    margin-bottom: 15px ;
+    margin-left: 12px ;
+}
+
+#about-us-second-paragraph{
+    opacity: 40% ;
+    font-size: 18px ;
+    margin-left: 12px ;
+}
+
+                                          /* استایل دادن به بخس مقاله ها */
+
+.site-article-part{
+    width: 100vw ;
+    height: 100vh ;
+    background: url(/ractod/image/sky\ watching.jpg) center/cover;
+    display: flex ;
+    align-items: center ;
+    padding: 0 127px ;
+}
+
+.site-article-part span{
+    width: 7px ;
+    height: 328px ;
+    background-color: #2B3A67 ;
+    margin: 50px 20px 0 0 ;
+    border-radius: 50px ;
+}
+
+                                          /* استایل دادن به متن بخش مقاله ها */
+
+.article-part-text{
+    width: 460px ;
+}
+
+.article-part-text h1{
+    font-size: 55px ;
+    margin-bottom: 30px ;
+}
+
+.article-part-text .article-part-first-paragraph{
+    font-size: 20px ;
+    margin-bottom: 32px ;
+    opacity: 90% ;
+}
+
+.article-part-text .article-part-second-paragraph{
+    font-size: 20px ;
+    margin-bottom: 27px ;
+    opacity: 70% ;
+}
+                                          /* استایل دادن به دکمه بخش مقاله ها */
+.site-article-part .article-part-read-button h3{
+    font-size: 24px ;
+    padding: 10px 30px ;
+    background-color: #2B3A67 ;
+    display: inline ;
+    border-radius: 30px ;
+    opacity: 90% ;
+    cursor: pointer ;
+    transition: opacity .2s linear ;
+}
+
+.site-article-part .article-part-read-button h3:hover{
+    opacity: 100% ;
+}
+
+                                          /* استایل دادن به بخش دانشمندان */
+
+.site-scientist-part{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    width: 100vw ;
+    height: 100vh ;
+    padding: 0 100px 0 50px ;
+    background-color: black ;
+}
+
+                                          /* استایل دادن به عکس های بخش دانشمندان */
+
+.scientist-part-image-container{
+    display: flex ;
+}
+
+.scientist-part-image{
+    display: flex ;
+    flex-direction: column ;
+    justify-content: flex-start ;
+    align-items: center ;
+    padding: 15px 0 0 0;
+    margin: 0 20px ;
+    width: 216px ;
+    height: 319px ;
+    background-color: #2B3A67 ;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px ;
+    cursor: pointer ;
+    transition: transform .4s ease-out ;
+}
+
+.scientist-part-image p{
+    font-size: 20px ;
+    margin-top: 10px ;
+    opacity: 70% ;
+}
+
+.scientist-part-image:hover{
+    transform: translateY(-10px);
+}
+
+                                          /* استایل دادن به متن بخش دانشمندان */
+
+.scientist-part-text{
+    width: 387px ;
+    text-align: center ;
+}
+
+.scientist-part-text h1{
+    font-size: 55px ;
+    margin-bottom: 30px ;
+    opacity: 90% ;
+}
+
+.scientist-part-text p{
+    font-size: 20px ;
+    opacity: 80% ;
+}
+
+
+@media (max-width: 1250px){
+    .site-home-part{
+        padding: 0 50px ;
+    }
+    .about-us-part-image img{
+        width: 650px ;
+        height: 550px ;
+    }
+    
+    #about-us-part-first-paragraph , #about-us-second-paragraph{
+        font-size: 18px  ;
+    } 
+    
+    .about-us-part-text h1{
+        font-size: 25px;
+    } 
+
+    .scientist-part-image{
+        width: 190px ;
+        height: 280px ;
+    }
+
+    .scientist-part-image img{
+        width: 150px ;
+    }
+    
+
+     .scientist-part-text h1{
+        font-size: 30px ;
+    }
+
+    .scientist-part-text p{
+        font-size: 16px ;
+    } 
+}

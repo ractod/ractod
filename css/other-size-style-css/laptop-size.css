@@ -1,0 +1,65 @@
+.site-home-part{
+    padding: 0 50px ;
+}
+
+/* استایل دادن به بخش درباره ما */
+
+.about-us-part-text{
+    width: 400px ;
+}
+
+#about-us-part-first-paragraph , #about-us-second-paragraph{
+    font-size: 16px  ;
+} 
+
+.about-us-part-text h1{
+    font-size: 20px;
+} 
+
+.about-us-part-image img{
+    width: 550px ;
+    height: 450px ;
+}
+
+@media (max-width: 1000px){
+    .about-us-part-image img{
+        width: 400px ;
+        height: 350px ;
+    }
+    
+}
+
+/* استایل دادن به بخش دانشمندان */
+
+.site-scientist-part{
+    justify-content: center ;
+    padding: 25px ;
+}
+
+.scientist-part-image img{
+    width: 150px ;
+}
+
+.scientist-part-image{
+    width: 180px ;
+    height: 280px ;
+}
+
+.scientist-part-text h1{
+    font-size: 40px ;
+}
+
+.scientist-part-text p{
+    font-size: 18px ;
+}
+
+.scientist-part-image p{
+    font-size: 18px ;
+}
+
+@media (max-width: 1000px){
+    .scientist-part-image{
+        display: none ;
+    }
+    
+}
