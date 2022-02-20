@@ -11,7 +11,7 @@ body{
     width: 100vw ;
     height: 100vh ;
     overflow-x: hidden ;
-    background: url(/ractod/image/test6.jpg) center/cover fixed ;
+    background: url(../image/test6.jpg) center/cover fixed ;
 }
 
 a{
@@ -93,8 +93,8 @@ form{
                                          /* استایل دادن به تیتر */
 
 .site-article-page-header-part h1{
-    font-size: 20px ;
-    padding: 10px 30px ;
+    font-size: 16px ;
+    padding: 7px 18px ;
     background-color: #4153B4 ;
     border-radius: 20px ;
     transition: background-color .15s linear ;
@@ -242,5 +242,34 @@ form{
     }
     .navbar-part-search-input{
         width: 60vw ;
+    }
+
+    .menu-container li{
+        width: 50% ;
+    }
+}
+
+@media (max-width: 480px ){
+    
+    .main-part-articles-container{
+        padding: 80px 30px ;
+        grid-template-columns: repeat(auto-fill, minmax(140px , 1fr ));
+        row-gap: 10px ;
+    }
+    
+    .site-navbar-part{
+        padding: 0 15px ;
+    }
+
+    .navbar-part-search-input{
+        width: 50vw ;
+    }
+
+    .menu-container li{
+        width: 50% ;
+    }
+
+    #error p{
+        width: 80vw ;
     }
 }
