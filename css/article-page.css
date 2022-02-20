@@ -11,7 +11,7 @@ body{
     width: 100vw ;
     height: 100vh ;
     overflow-x: hidden ;
-    background: url(/ractod/image/test6.jpg) cover fixed ;
+    background: url(/ractod/image/test6.jpg) center/cover fixed ;
 }
 
 a{
