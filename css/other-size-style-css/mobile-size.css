@@ -1,0 +1,66 @@
+
+/* استیل دادن به بخش خانه و بالایی */
+
+.site-home-part{
+    background: url(/image/mobile\ background.jpg) center/cover ;
+    padding: 0 50px ;
+    justify-content: center ;
+    text-align: center ;
+}
+
+.home-part-text p {
+    color: #e0e2e4 ;
+}
+
+#navbar-logo{
+    padding: 10px 25px ;
+}
+
+.menu-logo{
+    padding: 10px 25px ;
+}
+
+.navbar-content{
+    top: 60px ;
+}
+
+/* استایل دادن بخش درباره ما */
+
+#about-us-part-first-paragraph , #about-us-second-paragraph {
+    font-size: clamp(18px, 100%, 22px ) ;
+}
+
+.site-about-us-part{
+    padding: 20px ;
+}
+
+/* استایل دادن به بخش مقاله ها */
+
+.site-article-part{
+    justify-content: flex-start ;
+    padding: 0 20px ;
+}
+
+.article-part-text .article-part-first-paragraph ,.article-part-text .article-part-second-paragraph{
+    font-size: 15px ;
+}
+
+.article-part-text h1{
+    font-size: 30px ;
+}
+
+.site-article-part .article-part-read-button h3{
+    font-size: 20px ;
+}
+
+.site-article-part span{
+    height: 360px ;
+    position: relative;
+    bottom: 20px ;
+}
+
+/* استایل دادن به بخش دانشمندان */
+
+.scientist-part-text p{
+    font-size: 20px ;
+}
