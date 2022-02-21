@@ -3,6 +3,7 @@
 const menuButton = document.querySelector(".fa-bars")
 const menu = document.querySelector(".menu-container")
 const cards = document.getElementsByClassName("article-link-card")
+const error = document.getElementById("error")
 
 // اضافه کردن رویداد به دکمه ها
 
@@ -25,15 +26,19 @@ function changingList(event){
         switch(choice){
             case "menu-item-all": 
                 item.style.display = "block"
+                error.style.display = "none"
                 break
             case "menu-item-solar-system" : 
                 item.classList[1] == 'solar-system-planet' ? item.style.display = "block" : item.style.display = "none"
+                error.style.display = "none"
                 break
             case "menu-item-ultra-system": 
                 item.classList[1] == 'ultra-system-planet' ? item.style.display = "block" : item.style.display = "none"
+                error.style.display = "none"
                 break
             case "menu-item-scientist" :
                 item.classList[1] == 'scientist' ? item.style.display = "block" : item.style.display = "none"
+                error.style.display = "none"
         }
     }
     menuButton.classList.toggle("fa-xmark")
@@ -44,7 +49,6 @@ function changingList(event){
 
 const searchInput = document.querySelector(".navbar-part-search-input")
 const searchButton = document.querySelector("#navbar-part-search-button")
-const error = document.getElementById("error")
 
 // اضافه کردن رویداد به دکمه سرچ
 
