@@ -1,5 +1,5 @@
 const inputBackground = document.getElementById("toggle-input")
-const inputCircle = document.getElementById("circle")
+const inputCircle = document.querySelector(".circle")
 const persianLanguage = document.getElementById("persian")
 const englishLanguage = document.getElementById("english")
 const firstParagraph = document.getElementById("first")
@@ -8,21 +8,21 @@ const firstQuickInformation = document.getElementById("first-quick-information")
 const secondQuickInformation = document.getElementById("second-quick-information")
 
 // اضافه کردن رویداد به کلید تغییر زبان
-
+console.log(inputCircle)
 inputBackground.addEventListener("click" , toggle )
 
 // تغییر حالت کلید
 
 function toggle(){
-    if ( inputCircle.style.right == "0px" ){
-        inputCircle.style.right = "30px"
-        persianLanguage.style.display = "block"
-        englishLanguage.style.display = "none"
-    } else {
-        inputCircle.style.right = "0px"
+    inputCircle.classList.toggle("toggle")
+    if ( persianLanguage.style.display == "block" ){
         persianLanguage.style.display = "none"
         englishLanguage.style.display = "block"
+    } else {
+        persianLanguage.style.display = "block"
+        englishLanguage.style.display = "none"
     }
+
     changingInformation()
     changinQuickInformation()
 } 
@@ -30,23 +30,23 @@ function toggle(){
 // تغییر حالت متن اصلی
 
 function changingInformation(){
-    if ( secondParagraph.style.display == "none" ){
-        secondParagraph.style.display = "block"
-        firstParagraph.style.display = "none"
-    } else {
-        firstParagraph.style.display = "block"
+    if ( secondParagraph.style.display == "block" ){
         secondParagraph.style.display = "none"
+        firstParagraph.style.display = "block"
+    } else {
+        firstParagraph.style.display = "none"
+        secondParagraph.style.display = "block"
     }
 }
 
 // تغییر حالت اطلاعات اولیه
 
 function changinQuickInformation(){
-    if ( secondQuickInformation.style.display == "none"){
-        secondQuickInformation.style.display = "block"
-        firstQuickInformation.style.display = "none"
-    } else {
-        firstQuickInformation.style.display = "block"
+    if ( secondQuickInformation.style.display == "block"){
         secondQuickInformation.style.display = "none"
+        firstQuickInformation.style.display = "block"
+    } else {
+        firstQuickInformation.style.display = "none"
+        secondQuickInformation.style.display = "block"
     }
 }
