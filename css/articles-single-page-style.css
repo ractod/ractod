@@ -111,7 +111,7 @@ body{
     background-color: black ;
 }
 
-#circle{
+.circle{
     position: absolute ;
     height: 20px ;
     width: 20px ;
@@ -119,6 +119,10 @@ body{
     background-color: white ;
     transition: all .2s linear ;
     right: 0px ;
+}
+
+.toggle{
+    right: 30px ;
 }
 
 /* استایل دادن به بخش پایینی */
