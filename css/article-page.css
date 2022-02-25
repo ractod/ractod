@@ -11,7 +11,7 @@ body{
     width: 100vw ;
     height: 100vh ;
     overflow-x: hidden ;
-    background: url(../image/test6.jpg) center/cover fixed ;
+    background: url(/ractod/image/test6.jpg) center/cover fixed ;
 }
 
 a{
@@ -93,8 +93,8 @@ form{
                                          /* استایل دادن به تیتر */
 
 .site-article-page-header-part h1{
-    font-size: 16px ;
-    padding: 7px 18px ;
+    font-size: 18px ;
+    padding: 10px 30px ;
     background-color: #4153B4 ;
     border-radius: 20px ;
     transition: background-color .15s linear ;
@@ -132,7 +132,7 @@ form{
     font-size: 35px ;
     color: #C4C4C4 ;
     opacity: 70% ;
-    transition: transform .2s linear ;
+    transition: all .2s linear ;
 }
 
 .fa-bars:hover{
@@ -272,5 +272,35 @@ form{
 
     #error p{
         width: 80vw ;
+    }
+}
+
+@media (min-width: 1361px ){
+    .main-part-articles-container{
+        grid-template-columns: repeat(auto-fill , minmax(260px , 1fr));
+    }
+    .article-link-card a img{
+        width: 150px ;
+    }
+    .article-link-card a{
+        height: 380px ;
+    }
+    .article-link-card div{
+        width: 150px ;
+        height: 50px  ;
+    }
+    .article-link-card div p {
+        font-size: 25px ;
+    }
+    .main-part-articles-container{
+        padding-top: 120px ;
+    }
+    .site-navbar-part{
+        width: 100vw ;
+        height: 80px ;
+        padding: 0 70px  ;
+    }
+    .menu-container li{
+        width: 20% ;
     }
 }
