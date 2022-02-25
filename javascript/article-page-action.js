@@ -58,7 +58,10 @@ searchButton.addEventListener("click" , gettingInputValue )
 
 function gettingInputValue(event){
     event.preventDefault()
-    const userSearch = searchInput.value
+    const splitedSearch = searchInput.value.split("")
+    const mapedSearch = splitedSearch.map((i) => i == " " ? "" : i )
+    const userSearch = mapedSearch.join("")
+
     userSearch == "" ? null : findingSearch(userSearch.toLowerCase())
     searchInput.value = ""
 }
