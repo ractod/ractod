@@ -193,7 +193,7 @@ body{
     opacity: 70% ;
 }
                                           /* استایل دادن به دکمه بخش مقاله ها */
-.site-article-part .article-part-read-button h3{
+.site-article-part .article-part-read-button a h3{
     font-size: 24px ;
     padding: 10px 30px ;
     background-color: #2B3A67 ;
@@ -204,7 +204,7 @@ body{
     transition: opacity .2s linear ;
 }
 
-.site-article-part .article-part-read-button h3:hover{
+.site-article-part .article-part-read-button a h3:hover{
     opacity: 100% ;
 }
 
