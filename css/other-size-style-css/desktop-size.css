@@ -1,0 +1,102 @@
+.home-part-text{
+    width: 600px ;
+}
+
+.home-part-text h1{
+    font-size: 110px ;
+}
+
+.home-part-text p{
+    font-size: 30px ;
+}
+
+#home-part-image{
+    width: 400px ;
+}
+
+.navbar-link a{
+    font-size: 25px ;
+}
+
+/* استایل دادن به بخش درباره ما */
+
+.site-about-us-part{
+    padding: 0 100px ;
+}
+
+.about-us-part-text{
+    width: 500px ;
+}
+
+.about-us-part-text h1{
+    font-size: 50px ;
+}
+
+.about-us-part-text #about-us-part-first-paragraph , .about-us-part-text #about-us-second-paragraph{
+    font-size: 25px ;
+}
+
+.about-us-part-image img{
+    width: 900px ;
+}
+
+/* استایل دادن به بخش مقاله ها */
+
+.article-part-text{
+    width: 510px ;
+}
+
+.article-part-text h1{
+    font-size: 70px ;
+}
+
+.article-part-text .article-part-first-paragraph , .article-part-text .article-part-second-paragraph {
+    font-size: 25px ;
+}
+
+.site-article-part .article-part-read-button h3{
+    font-size: 30px ;
+}
+
+.site-article-part span{
+    height: 450px ;
+}
+
+/* استایل دادن بخش دانشمندان */
+
+.site-scientist-part{
+    padding:  0 150px 0 100px ;
+}
+
+.scientist-part-text{
+    width: 550px ;
+}
+
+.scientist-part-text h1{
+    font-size: 80px ;
+}
+
+.scientist-part-text p{
+    font-size: 30px ;
+}
+
+.scientist-part-image{
+    width: 280px;
+    height: 380px ;
+}
+
+.scientist-part-image a{
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-between ;
+    align-items: center ;
+}
+
+.scientist-part-image img{
+    width: 240px ;
+    height: 300px ;
+}
+
+.scientist-part-image p{
+    font-size: 25px ;
+}
