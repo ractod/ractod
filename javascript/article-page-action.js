@@ -22,7 +22,6 @@ function openCloseMenu(){
 function changingList(event){
     const choice = event.target.id
     for ( let item of cards ){
-        const itemClass = item.classList[1]
         switch(choice){
             case "menu-item-all": 
                 item.style.display = "block"
@@ -74,9 +73,11 @@ function findingSearch(userSearch){
     for ( let item of cards ){
         item.style.display = "none"
         for( let i of item.classList ){
-            let Class = i.replace("-" , " ")
-            Class = Class.replace("-" , " ")
-            if ( Class == userSearch ){
+            let Class = i
+            const splitedClass = Class.split("")
+            const mapedClass = splitedClass.map((i) => i == " " || i == "-" ? "" : i)
+            const test = mapedClass.join("")
+            if ( test == userSearch ){
                 item.style.display = "block"
                 mistake++
             }
