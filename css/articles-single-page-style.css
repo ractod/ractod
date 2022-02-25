@@ -11,7 +11,7 @@ body{
     height: 100vh ;
     padding: 20px 50px ;
     overflow-x: hidden ;
-    background: url(../image/test6.jpg) center/cover fixed ;
+    background: url(/ractod/image/test6.jpg) center/cover fixed ;
 }
 
 /* استایل دادن به بخش بالایی */
@@ -38,7 +38,6 @@ body{
     justify-content: space-around ;
     align-items: center ;
     padding: 30px  ;
-    /* width: 400px ; */
     height: 500px ;
     border-radius: 40px ; 
 }
@@ -129,6 +128,7 @@ body{
 
 .bottom-content{
     margin-bottom: 20px ;
+    padding:  0 0 30px 0 ;
 }
 
 .information{
@@ -207,5 +207,14 @@ body{
     }
     .card-content h1{
         font-size: 30px ;
+    }
+}
+
+@media (min-width: 1361px) {
+    body{
+        padding: 20px 150px ;
+    }
+    .top-information{
+        padding: 50px 150px  ;
     }
 }
