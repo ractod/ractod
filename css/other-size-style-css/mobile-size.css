@@ -2,7 +2,7 @@
 /* استیل دادن به بخش خانه و بالایی */
 
 .site-home-part{
-    background: url(/image/mobile background.jpg) center/cover ;
+    background: url(/image/mobile\ background.jpg) center/cover fixed;
     padding: 0 50px ;
     justify-content: center ;
     text-align: center ;
